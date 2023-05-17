@@ -12,8 +12,8 @@ const App = () => {
     <div>
         {/* Do not remove the main div */}
 
-        <label for="inp">Enter your name: </label>
-        <input id="inp" type="text" onChange={changeInp}/>
+        <p>Enter your name: </p>
+        <input type="text" onChange={changeInp}/>
          
         {name && <p>Hello {name}!</p>}
          
