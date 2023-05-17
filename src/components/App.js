@@ -11,13 +11,14 @@ const App = () => {
   return (
     <div>
         {/* Do not remove the main div */}
+
         <label for="inp">Enter your name: </label>
         <br />
         <br />
-        <input id="inp" type="text" onChange={changeInp}></input>
-        <br />
-        <br />
-        <p>{name}</p>
+        <input id="inp" type="text" onChange={changeInp}/>
+         
+        {name && <p>Hello {name}!</p>}
+         
     </div>
   )
 }
